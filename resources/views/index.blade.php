@@ -10,8 +10,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>Aplikasi Harga Pangan</h1>
-            <p>Aplikasi ini menggunakan data latih dan data uji harga pangan dari Januari 2023 - Desember 2023 bersumber dari PIHPS</p>
+            <h1>Aplikasi Prediksi Harga Pangan</h1>
+            <p>Aplikasi ini menggunakan data latih dan data uji harga pangan dari Januari 2021 - Desember 2023 bersumber dari PIHPS</p>
         </header>
         <main>
             <form id="priceForm">
@@ -125,7 +125,7 @@
             const formattedStartDate = startDate.split('-').reverse().join('/');
             const formattedEndDate = endDate.split('-').reverse().join('/');
 
-            const url = 'http://165.22.106.50/flask/predict'; // Ganti dengan URL API Anda
+            const url = 'https://pangan.prasanda.com/flask/predict'; // Ganti dengan URL API Anda
 
             fetch(url, {
                 method: 'POST',
